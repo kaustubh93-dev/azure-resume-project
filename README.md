@@ -7,4 +7,6 @@ This is my Cloud Resume Challenge built on Azure. It's a static website hosted o
 ![alt text](image.png)
 
 
+## Demo
 
+[View it live here](https://www.gpsresume.com/)
