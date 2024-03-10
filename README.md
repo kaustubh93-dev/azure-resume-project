@@ -8,6 +8,7 @@ If you'd like to build your own, here is the YouTube video [video](https://youtu
 
 ![alt text](image.png)
 
+![alt text](image-1.png)
 
 ## Demo
 
