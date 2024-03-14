@@ -2,32 +2,32 @@
 param (
     [Parameter(Mandatory)]
     [string]
-    $CdnProfileName,
+    $CdnProfileName, # The name of the CDN profile
 
     [Parameter(Mandatory)]
     [string]
-    $CdnEndpointName,
+    $CdnEndpointName, # The name of the CDN endpoint.
 
     [Parameter(Mandatory, HelpMessage='This is the storage endpoint URL.')]
     [string]
-    $StaticWebsiteUrl,
+    $StaticWebsiteUrl, # The storage endpoint URL for your static website.
 
     [Parameter()]
     [ValidateSet('Custom_Verizon','Premium_ChinaCdn','Premium_Verizon','StandardPlus_955BandWidth_ChinaCdn','StandardPlus_AvgBandWidth_ChinaCdn',`
         'StandardPlus_ChinaCdn','Standard_955BandWidth_ChinaCdn','Standard_Akamai','Standard_AvgBandWidth_ChinaCdn','Standard_ChinaCdn','Standard_Microsoft','Standard_Verizon')]
     [string]
-    $CdnSku = 'Standard_Microsoft',
+    $CdnSku = 'Standard_Microsoft', #The SKU (service level) for the CDN. It has a default value of 'Standard_Microsoft'.
 
     [Parameter(Mandatory)]
     [string]
-    $ResourceGroup,
+    $ResourceGroup,  # The name of the Azure resource group.
 
     [Parameter(Mandatory)]
     [ValidateSet('global','australiaeast','australiasoutheast','brazilsouth','canadacentral','canadaeast','centralindia','centralus',`
         'eastasia','eastus','eastus2','japaneast','japanwest','northcentralus','northeurope','southcentralus','southindia','southeastasia',`
         'westeurope','westindia','westus','westcentralus')]
     [string]
-    $Region
+    $Region # The Azure region where the CDN resources will be deployed.
 )
 
 # Creates a CDN Profile which can be used to host multiple endpoints
