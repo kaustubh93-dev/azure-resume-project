@@ -70,6 +70,6 @@ jobs:
           app-name: 'azure-function-resume'
           slot-name: 'Production'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_75A3ECA87D8343CBB501ABD35658115E }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A51532FD3668459DB2B69513E68C4945 }}
           scm-do-build-during-deployment: true
           enable-oryx-build: true
